@@ -22,4 +22,4 @@ document.writeln(`<p>O carro popular ${carroPopular.marca} modelo ${carroPopular
 
 const carroEsportivo = new Carro("Ferrari","Spider","2026");
 
-document.writeln(`<p>O carro esportivo ${carroEsportivo.marca} modelo ${carroEsportivo.modelo} é do ano ${carroEsportivo.ano} e quando ele acelera faz ${carroEsportivo.acelerar}`);
+document.writeln(`<p>O carro esportivo ${carroEsportivo.marca} modelo ${carroEsportivo.modelo} é do ano ${carroEsportivo.ano} e quando ele acelera faz ${carroEsportivo.acelerar()}`);
