@@ -34,7 +34,7 @@ carroConversivel.ano = "2026";
 carroConversivel.corNeon = "Azul";
 
 // Adicionando um NOVO MÉTODO (não previsto na classe)
-carroConversivel.turbp = function(){
+carroConversivel.turbo = function(){
     return "Vrummmmmmm!!!!!!! O carro está acelerando!!!!"
 }
 
