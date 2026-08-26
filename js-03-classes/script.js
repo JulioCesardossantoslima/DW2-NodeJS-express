@@ -23,3 +23,19 @@ document.writeln(`<p>O carro popular ${carroPopular.marca} modelo ${carroPopular
 const carroEsportivo = new Carro("Ferrari","Spider","2026");
 
 document.writeln(`<p>O carro esportivo ${carroEsportivo.marca} modelo ${carroEsportivo.modelo} é do ano ${carroEsportivo.ano} e quando ele acelera faz ${carroEsportivo.acelerar()}`);
+
+//Criando uma nova INSTÂNCIA : Carro Covnersível
+const carroConversivel = new Carro();
+carroConversivel.marca = "Chevrolet";
+carroConversivel.modelo = "Camaro";
+carroConversivel.ano = "2026";
+
+// Adicionando um NOVO ATRIBUTO (não previsto na classe)
+carroConversivel.corNeon = "Azul";
+
+// Adicionando um NOVO MÉTODO (não previsto na classe)
+carroConversivel.turbp = function(){
+    return "Vrummmmmmm!!!!!!! O carro está acelerando!!!!"
+}
+
+document.writeln(`<p>O carro ${carroConversivel.marca} ${carroConversivel.modelo} tem neon da cor ${carroConversivel.corNeon}.`)
