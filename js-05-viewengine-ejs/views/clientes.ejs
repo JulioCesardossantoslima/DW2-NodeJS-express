@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
-</head>
-<body>
-      <a href="/">Voltar</a>
-    <h1 style="text-align: center;">Página de Clientes!</h1>
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+    <h4 style="text-align: center;">Página de Clientes!</h4>
 
     <!-- forEach dentro de TABELA -->
 
@@ -24,5 +17,4 @@
             </tr>
         <% }) %>
     </table>
-</body>
-</html>
+<%- include ('partials/footer.ejs') %>

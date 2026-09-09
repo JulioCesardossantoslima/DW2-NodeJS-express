@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-</head>
-<body>
-    <h1 style="text-align: center;">Bem-vindo à Homepage!</h1>
-    <br>
-    <ul>
-        <li><a href="/produtos">Produtos</a></li>
-        <li><a href="/clientes">Clientes</a></li>
-        <li><a href="/perfil">Perfil</a></li>
-    </ul>
-</body>
-</html>
+<!-- Importando o Cabeçalho -->
+<%- include ('partials/header.ejs') %>
+<!-- Importando a Navbar -->
+<%- include ('partials/navbar.ejs') %>
+<h4 style="text-align: center">Bem-vindo à Homepage!</h4>
+<br />
+<!-- Importando imagens -->
+<img src="./images/nodejs.png" alt="Imagem do NodeJS" width="300px" />
+<!-- Importante o Rodapé -->
+<%- include ('partials/footer.ejs') %>
