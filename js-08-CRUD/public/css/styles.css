@@ -20,3 +20,7 @@ th, td {
 footer {
     text-align: center;    
 }
+
+.container form{
+    padding-bottom: 20px;
+}

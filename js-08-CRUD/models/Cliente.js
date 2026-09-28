@@ -14,7 +14,7 @@ const Cliente = connection.define('clientes', {
         type: Sequelize.STRING,
         allowNull: false
     },
-    CPF:{
+    cpf:{
         type: Sequelize.STRING,
         allowNull: false
     },

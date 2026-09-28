@@ -19,14 +19,10 @@ connection.query(`CREATE DATABASE IF NOT EXISTS ${DB_NAME}`).then(() => {
 }).catch((error) => {
   console.log(`Ocorreu um erro ao criar banco de dados ${DB_NAME}, Erro: ${error}`)
 });
-// Configurações do Express
-app.set("view engine", "ejs");
-//Configurar a pasta 'PUBLIC' para arquivos estáticos como CSS e JavaScripts
-app.use(express.static("public"));
-// Página principal
-app.get("/", (req, res) => {
-  res.render("index");
-});
+
+
+//Configurando o express para permitir dados através de formlários
+app.use(express.urlencoded({ extended: false}));
 
 // Importando os controladores
 // Referência de diretórios:
@@ -43,10 +39,20 @@ import Cliente from "./models/Cliente.js";
 import Produto from "./models/Pedido.js";
 
 
+
 // Configurando as rotas
 app.use(clienteController); // Configurando o controlador de clientes
 app.use(produtoController); // Configurando o controlador de produtos
 app.use(pedidosController); // Configurando o controlador de pedidos
+
+// Configurações do Express
+app.set("view engine", "ejs");
+//Configurar a pasta 'PUBLIC' para arquivos estáticos como CSS e JavaScripts
+app.use(express.static("public"));
+// Página principal
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
 //Iniciar servidor na porta 8080
 const port = 8080;
